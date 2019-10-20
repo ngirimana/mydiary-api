@@ -7,8 +7,8 @@ const { expect } = chai;
 chai.use(chaiHttp);
 
 
-describe('0. incorrect route', () => {
-  it('should return incorrect route ', (done) => {
+describe('0. Welcome', () => {
+  it('should return wecome ', (done) => {
     chai.request(app)
       .get('/')
       .set('Accept', 'application/json')
